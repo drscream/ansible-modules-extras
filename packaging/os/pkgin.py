@@ -93,7 +93,7 @@ def query_package(module, pkgin_path, name):
         #     '<' - installed but out of date
         #     '=' - installed and up to date
         #     '>' - installed but newer than the repository version
-        pkgname_with_version, raw_state = out.split(' ')[0:2]
+        pkgname_with_version, raw_state = out.split(';')[0:2]
 
         # Strip version
         # (results in sth like 'gcc47-libs')
